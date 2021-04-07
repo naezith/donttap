@@ -513,14 +513,14 @@ function Refresh(p) {
  good = 1;
  Errr=0;
  Score.innerHTML="0";
- Time.innerHTML="30";
+ Time.innerHTML="10";
  if (FreRec.length>0){
     Best.innerHTML="HI-SCORE<br>"+FreRec[0].record;}else{Best.innerHTML="HI-SCORE<br>";}
  clearInterval(timerGP);
    if (p==0){
  clearInterval(timerGO);
  timerWent = false;
- TimeL = 30;
+ TimeL = 10;
  Timer();
     //DrawSquares();
  horiAr[0] = Math.floor(Math.random() * (4 - 1 + 1));
@@ -586,9 +586,9 @@ contextB.fill();
     //doit = 0;
        // console.log(Bonus,"1");
         if (Bonus<92){
-        Bonus = Bonus+8;}
+        Bonus = 0;}
         else
-        {Bonus=100;}
+        {Bonus=0;}
        // console.log(Bonus,"2");
         CalculateScore();
         good=1;
@@ -720,7 +720,7 @@ div.appendChild(PressKey);
 
 //Score.innerHTML="&nbsp;"+"0";
 Time.id = "time";
-Time.innerHTML="30";
+Time.innerHTML="10";
 Time.style.position='absolute';
 Time.style.padding=sqsize/8+'px';
 //Score.style.left=Math.round(w/2.23)+"px";
@@ -744,7 +744,7 @@ timerWent=true;
 timerGO = setInterval(function() {
 TimeL = (TimeL-0.1).toFixed(1);
 if (Bonus>3){
-    Bonus=Math.round((Bonus-3)*10)/10;}else{Bonus=0.1;}
+    Bonus=0;}else{Bonus=0;}
     PressKey.innerHTML=Math.ceil(Bonus/20);
     //console.log(Bonus,"3");
     //console.log(Bonus);
