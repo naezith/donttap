@@ -586,9 +586,9 @@ contextB.fill();
     //doit = 0;
        // console.log(Bonus,"1");
         if (Bonus<92){
-        Bonus = 0;}
+        Bonus = 0.1;}
         else
-        {Bonus=0;}
+        {Bonus=0.1;}
        // console.log(Bonus,"2");
         CalculateScore();
         good=1;
@@ -744,7 +744,7 @@ timerWent=true;
 timerGO = setInterval(function() {
 TimeL = (TimeL-0.1).toFixed(1);
 if (Bonus>3){
-    Bonus=0;}else{Bonus=0;}
+    Bonus=0.1;}else{Bonus=0.1;}
     PressKey.innerHTML=Math.ceil(Bonus/20);
     //console.log(Bonus,"3");
     //console.log(Bonus);
